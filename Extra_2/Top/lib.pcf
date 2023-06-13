@@ -1,0 +1,23 @@
+# -----------------------------------------------------------------------------
+#- Alhambra II constraint file (.pcf)
+#- Unike267
+#- May - 2023
+#- GPL license
+# -----------------------------------------------------------------------------
+
+set_io clk 49 # clk (12 MHz)
+
+set_io sw1 34 # assign sw1 to switch 1
+set_io rst 33 # assign rst to switch 2
+
+set_io led0 45  # output
+set_io led1 44 # output
+set_io led2 43 # output
+set_io led3 42 # output
+set_io led4 41 # output
+set_io led5 39 # output
+set_io led6 38 # output
+set_io led7 37 # output
+
+
+
