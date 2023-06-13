@@ -29,4 +29,7 @@ Para ello se procede de la siguiente manera:
     + Se realiza otro test bench junto a un programa en C para [[co-simular](https://github.com/ghdl/ghdl-cosim)] el test utilizando GHDL, unidos mediante el "puente" [[VHPIDIRECT](https://vunit.github.io/cosim/bridges/vhpidirect.html#)].
     + **NOTA:** Para que GHDL soporte la compilación cruzada se ha de tener instalados los paquetes "clang" y "llvm-dev" y a la hora de instalar el GHDL al configure se le ha de añadir como argumento "--with-llvm-config".
 
+- **Extra:** Se realizan dos ejercicios extra.
+    + En el primero se sintetizará el decodificador de estados en la FPGA y se comprobará su funcionamiento.
+    + En el segundo se diseñará, simulará y sintetizará una arquitectura con objeto de ensayar el protocolo **AXI Stream**.
 

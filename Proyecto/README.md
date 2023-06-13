@@ -18,7 +18,7 @@ El objetivo es analizar en un test bench las 32 posibles iteraciones de entrada 
 
 Para generar el archivo en C, tanto las funciones de las entradas como las de las salidas se han generado a partir de la tabla de verdad mostrada en la carpeta anterior.
 
-Cabe destacar que en dichas funciones el argumento de entrada y de salida son integers, por lo que se habrá de acomodar a std_logic_vector, que es el tipo de dato utilizado para describir la arquitectura en VHDL. Además, se comenzó haciendo uso de señales intermedias tipo signal para guardar los resultados de las funciones. De esta manera no funcionaba correctamente, ya que guardaba el dato de la iteración anterior y en la primerá iteración guardaba el estado 'U' a los std_logic. Por lo que se llegó a la conclusión que para guardar los resultados de las funciones se han de utilizar variables en lugar de signals.
+Cabe destacar que en dichas funciones el argumento de entrada y de salida son integers, por lo que se habrá de acomodar a std_logic_vector, que es el tipo de dato utilizado para describir la arquitectura en VHDL. Además, se comenzó haciendo uso de señales intermedias tipo signal para guardar los resultados de las funciones. De esta manera no funcionaba correctamente, ya que guardaba el dato de la iteración anterior y en la primera iteración guardaba el estado 'U' a los std_logic. Por lo que se llegó a la conclusión que para guardar los resultados de las funciones se han de utilizar variables en lugar de signals.
 
 Se muestra en el archivo run.sh los pasos a realizar para analizar, elaborar y correr el diseño.
 
