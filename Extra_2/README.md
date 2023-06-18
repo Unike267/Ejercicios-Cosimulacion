@@ -12,7 +12,7 @@
 
 ### Extra 2:
 
-Se propone un segundo ejercicio extra. En él se diseñará, simulará y sintetizará una pequeña arquitectura digital que realice lo siguiente:
+Se propone un segundo ejercicio extra. En el se diseñará, simulará y sintetizará una pequeña arquitectura digital que realice lo siguiente:
 
 - Obtener dos datos desde el switch 1 de la placa. Para ello se dispondrá de 10 segundos para introducir el primero y otros 10 para el segundo. El número de pulsaciones al switch será el dato introducido. El intervalo del dato irá de 0 a 15 (4 bits). 
 
