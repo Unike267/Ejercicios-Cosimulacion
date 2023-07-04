@@ -38,7 +38,7 @@ Se muestra un esquema simplificado del diseño:
 
 ## Limitaciones:
 
-Caracteres soportados (6 x 8 pixeles por letra):
+Caracteres soportados (8 x 6 pixeles por letra):
 
 ![Caracteres soportados](https://github.com/Unike267/Photos/blob/master/UNI-Photos/cosim/CARACTERES.png)
 
