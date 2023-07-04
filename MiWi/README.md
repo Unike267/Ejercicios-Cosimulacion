@@ -26,7 +26,7 @@ La interfaz que soporta MiWi es la siguiente:
 
 ## Esquema de montaje:
 
-El esquema esquema de montaje es el siguiente:
+El esquema de montaje es el siguiente:
 
 ![Esquema de montaje](https://github.com/Unike267/Photos/blob/master/UNI-Photos/cosim/ESQUEMA_MONTAJE.png)
 
