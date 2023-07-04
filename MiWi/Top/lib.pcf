@@ -1,0 +1,25 @@
+# -----------------------------------------------------------------------------
+#- Alhambra II constraint file (.pcf)
+#- Unike267
+#- Jun - 2023
+#- GPL license
+# -----------------------------------------------------------------------------
+
+set_io clk 49 # clk (12 MHz)
+
+set_io rst 34 # assign rst to switch 1
+
+set_io out_3 2 # digital pin 0 to keyboard output 3
+set_io out_2 1 # digital pin 1 to keyboard output 2  
+set_io out_1 4 # digital pin 2 to keyboard output 1  
+set_io out_0 3 # digital pin 3 to keyboard output 0  
+set_io in_3 8 # digital pin 4 from keyboard input 3 
+set_io in_2 7 # digital pin 5 from keyboard input 2 
+set_io in_1 10 # digital pin 6 from keyboard input 1  
+set_io in_0 9 # digital pin 7 from keyboard input 3 
+
+set_io clock 20 # digital pin 8 to screen clock
+set_io din 19 # digital pin 9 to screen din
+set_io dc 22 # digital pin 10 to screen dc
+set_io ce 21 # digital pin 11 to screen ce
+set_io reset 63 # digital pin 12 to screen reset

@@ -3,7 +3,7 @@
 ---
 
 - **Universidad**: UPV-EHU.
-- **Master**: Sistemas electrónicos avanzados, [[SIEAV](https://github.com/umarcor/SIEAV)].
+- **Máster**: Sistemas electrónicos avanzados, [[SIEAV](https://github.com/umarcor/SIEAV)].
 - **Asignatura**: Cosimulación para la verificación de sistemas sobre FPGAs.
 - **Alumno**: Unai S.
 
