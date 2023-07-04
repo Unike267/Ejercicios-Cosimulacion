@@ -12,7 +12,9 @@
 
 ### Resumen:
 
-Se propone un ejercicio, un proyecto de asignatura y unos ejercicios extras. El objetivo en ambos casos consistirá en testear un componente de la arquitectura digital que implementa un MPPT realizada para el TFG, en concreto el [[decodificador de estados](https://github.com/Unike267/MPPT/blob/main/LAZO_ABIERTO_SIMULACION/decoder.v)].
+Se propone un ejercicio, un proyecto de asignatura y unos ejercicios extras. 
+
+El objetivo del ejercicio y del proyecto consiste en testear un componente de la arquitectura digital que implementa un MPPT realizada para el TFG, en concreto el [[decodificador de estados](https://github.com/Unike267/MPPT/blob/main/LAZO_ABIERTO_SIMULACION/decoder.v)].
 
 Cuya tabla de verdad es la siguiente:
 ![Tabla de verdad](https://github.com/Unike267/Photos/blob/master/UNI-Photos/cosim/STATE%20DECODER%20TABLE.png)
