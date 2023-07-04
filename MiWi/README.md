@@ -10,9 +10,9 @@
 ---
 ---
 
-### Miwi:
+### MiWi:
 
-Miwi es un escritor de texto plano descrito íntegramente en **VHDL**.
+MiWi es un escritor de texto plano descrito íntegramente en **VHDL**.
 
 ## Interfaz:
 
