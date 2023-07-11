@@ -39,7 +39,7 @@ begin
 -- Internal fifo process:
 
     process ( clk )
-            variable cnt : natural range 0 to 2 := 0;
+            variable cnt : natural range 0 to 2 := 0;            
     begin
         if ( rising_edge( clk ) ) then
             if ( rst = '1' ) then
