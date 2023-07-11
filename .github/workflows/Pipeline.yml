@@ -7,6 +7,7 @@ on:
 
 jobs:
 
+
   Ejercicio:
     runs-on: ubuntu-latest
 
@@ -18,3 +19,25 @@ jobs:
       - uses: docker://gcr.io/hdl-containers/sim/osvb
         with:
           args: ./Ejercicio/VUnit/vunit_run.py
+
+
+  Extra:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: '🧰 Checkout'
+        uses: actions/checkout@v3
+
+      - uses: docker://gcr.io/hdl-containers/impl/icestorm
+        with:
+          args: ./Extra/run.sh
+
+      - name: '📤 Upload artifact'
+        uses: actions/upload-artifact@v3
+        with:
+          name: Extra
+          path: |
+            ./Extra/top.asc
+            ./Extra/top.json
+            ./Extra/top.bin
