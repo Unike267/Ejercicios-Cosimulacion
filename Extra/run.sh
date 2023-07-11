@@ -18,4 +18,4 @@ echo "Generate bitstream"
 icepack top.asc top.bin
 
 echo "Load bitstream in FPGA (make with sudo)"
-iceprog top.bin
+which iceprog && iceprog top.bin || echo 'Skipping iceprog...'
