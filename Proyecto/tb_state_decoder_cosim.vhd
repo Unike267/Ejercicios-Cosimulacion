@@ -3,10 +3,10 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity tb_state_decoder is
-end tb_state_decoder;
+entity tb_state_decoder_cosim is
+end tb_state_decoder_cosim;
 
-architecture behav of tb_state_decoder is
+architecture behav of tb_state_decoder_cosim is
 
 --Declaration of the state decoder component
 
@@ -53,14 +53,14 @@ attribute foreign of out_value_rst_ci : function is "VHPIDIRECT out_value_rst_ci
 
 begin
 
---Component instantiation 
+--Component instantiation
 state_decoder_0 : state_decoder port map (state => state_in, flag => flag_in, nstate => nstate_out, en => en_out, rst_ci => rst_ci_out);
 
 --Test for 32 posible combination
 
 
 test : process
-        
+
        --Define variables
 
        variable in_state : integer := 0;
@@ -74,11 +74,11 @@ test : process
 
        begin
         for i in 1 to 32 loop
-            
-            report "Iteration: " & integer'image(i);            
+
+            report "Iteration: " & integer'image(i);
 
             --Print input values
-            
+
             report "state: " & integer'image( in_value_state(i) ) severity note;
             report "flag: " & integer'image( in_value_flag(i) ) severity note;
 
@@ -94,7 +94,7 @@ test : process
             wait for 1 ns;
 
             --Capture output values in integer variables
-            
+
             out_nstate := out_value_nstate(i);
             out_en := out_value_en(i);
             out_rst_ci := out_value_rst_ci(i);
@@ -109,11 +109,11 @@ test : process
 
            assert ((nstate_out = assert_nstate) and (en_out = assert_en) and (rst_ci_out = assert_rst_ci)) --expected output
            report "test failed" severity error;
-            
+
         end loop;
         wait;
-       
+
        end process;
 end behav;
 
-               
+
