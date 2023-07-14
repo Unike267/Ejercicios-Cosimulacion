@@ -38,7 +38,7 @@ begin
         variable aux : std_logic := '0';
     begin
         if ( rising_edge( clk ) ) then
-            if( rst = '1' or pause = '1' or finish = '1' ) then
+            if( rst = '1' or pause = '1' or finish = '1') then
                 cnt := "0000";
                 
                 --Assign null state

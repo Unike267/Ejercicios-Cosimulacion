@@ -5,7 +5,7 @@ set -e
 cd $(dirname "$0")
 
 echo "Analyze state_decoder.vhd and top.vhd"
-ghdl -a state_decoder.vhd
+ghdl -a ../Ejercicio/state_decoder.vhd
 ghdl -a top.vhd
 
 echo "Synthesis with yosys and ghdl as module"
