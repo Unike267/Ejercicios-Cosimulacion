@@ -18,7 +18,7 @@ jobs:
 
       - uses: docker://gcr.io/hdl-containers/sim/osvb
         with:
-          args: ./Ejercicio/VUnit/vunit_run.py
+          args: ./Ejercicio/vunit_run.py
 
 
   Proyecto:
