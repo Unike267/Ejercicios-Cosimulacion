@@ -47,7 +47,7 @@ Distribuidos en el teclado de la siguiente manera:
 
 Pantalla: debido a varias limitaciones, en concreto a las LUTs disponibles en la ICE 40 (el diseño ocupa 6429 de 7680) el número de caracteres imprimibles son 7. Es decir, **solo se escribe una de las seis lineas de la pantalla** (8 x 84 pixeles por linea). No obstante, al introducir el siguiente carácter después del séptimo se reinicia al estado inicial y se vuelve a poder escribir otros 7 caracteres.
 
-Esto es debido a que al extender la longitud del puntero que se modifica al escribir un carácter, véase [[screen.vhd](https://github.com/Unike267/Ejercicios-Cosimulacion/blob/main/MiWi/Top/screen.vhd)], con objeto de escribir toda la pantalla, se multiplica el número de LUTs necesarias superando las 7680.
+Esto es debido a que al extender la longitud del puntero que se modifica al escribir un carácter, véase [[screen.vhd](https://github.com/Unike267/Ejercicios-Cosimulacion/blob/main/MiWi/src/screen.vhd)], con objeto de escribir toda la pantalla, se multiplica el número de LUTs necesarias superando las 7680.
 
 ## Síntesis:
 
