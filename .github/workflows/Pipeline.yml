@@ -4,6 +4,12 @@ on:
   push:
   pull_request:
   workflow_dispatch:
+  release:
+    types:
+      - published
+
+permissions:
+  contents: write
 
 jobs:
 
@@ -72,4 +78,11 @@ jobs:
         with:
           name: MiWi
           path: ./top_MiWi.bin
+
+      - name: '📤 Upload Release Assets'
+        run: gh release upload --repo Unike267/Ejercicios-Cosimulacion --clobber $TAG $FILES
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: MiWi
+          FILES: ./top_MiWi.bin
 
