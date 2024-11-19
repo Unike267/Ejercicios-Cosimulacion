@@ -16,7 +16,7 @@ jobs:
       - name: '🧰 Checkout'
         uses: actions/checkout@v3
 
-      - uses: docker://gcr.io/hdl-containers/sim/osvb
+      - uses: docker://ghcr.io/hdl/sim/osvb:latest
         with:
           args: ./Ejercicio/vunit_run.py
 
@@ -29,7 +29,7 @@ jobs:
       - name: '🧰 Checkout'
         uses: actions/checkout@v3
 
-      - uses: docker://gcr.io/hdl-containers/sim
+      - uses: docker://ghcr.io/hdl/sim:latest
         with:
           args: ./Proyecto/run.sh
 
@@ -42,7 +42,7 @@ jobs:
       - name: '🧰 Checkout'
         uses: actions/checkout@v3
 
-      - uses: docker://gcr.io/hdl-containers/impl/icestorm
+      - uses: docker://ghcr.io/hdl/impl/icestorm:latest
         with:
           args: ./Extra/run.sh
 
