@@ -14,7 +14,7 @@ jobs:
     steps:
 
       - name: '🧰 Checkout'
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - uses: docker://ghcr.io/hdl/sim/osvb:latest
         with:
@@ -27,7 +27,7 @@ jobs:
     steps:
 
       - name: '🧰 Checkout'
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - uses: docker://ghcr.io/hdl/sim:latest
         with:
@@ -40,17 +40,36 @@ jobs:
     steps:
 
       - name: '🧰 Checkout'
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - uses: docker://ghcr.io/hdl/impl/icestorm:latest
         with:
           args: ./Extra/run.sh
 
       - name: '📤 Upload artifact'
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Extra
           path: |
             ./Extra/top.asc
             ./Extra/top.json
             ./Extra/top.bin
+
+  MiWi:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: '🧰 Checkout'
+        uses: actions/checkout@v4
+
+      - uses: docker://ghcr.io/hdl/impl/icestorm:latest
+        with:
+          args: ./MiWi/make.sh
+
+      - name: '📤 Upload artifact'
+        uses: actions/upload-artifact@v4
+        with:
+          name: MiWi
+          path: ./top_MiWi.bin
+
